@@ -27,11 +27,12 @@ export class FoodsComponent implements OnInit {
   ngOnInit() {
     this.getFood();
     console.log("Here")
-    console.log(this.foodlist)
+
   }
   getFood(): void {
     this.foodService.getFood()
     .subscribe(foodlist => this.foodlist = foodlist);
+
   }
 
 }
