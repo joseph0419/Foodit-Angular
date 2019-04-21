@@ -5,7 +5,8 @@ import { AddFoodComponent } from './add-food/add-food.component';
 import { FoodCollectionComponent } from './food-collection/food-collection.component';
 
 const routes: Routes = [
-  {path: 'home', component:HomeComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
   {path: 'add-food', component: AddFoodComponent},
   {path: 'food-collection', component: FoodCollectionComponent}
 ];
